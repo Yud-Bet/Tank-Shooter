@@ -141,11 +141,13 @@
   <ItemGroup>
     <ClCompile Include="g_map.cpp" />
     <ClCompile Include="my_console.cpp" />
+    <ClCompile Include="Object.cpp" />
     <ClCompile Include="Source.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="g_map.h" />
     <ClInclude Include="my_console.h" />
+    <ClInclude Include="Object.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
