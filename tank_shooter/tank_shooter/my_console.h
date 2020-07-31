@@ -6,6 +6,11 @@
 #define KEY_NONE	-1
 #define SNAKE_CHAR (char)219
 
+struct Coord {
+	int x;
+	int y;
+};
+
 void gotoxy(int, int);
 int inputKey();
 void ShowConsoleCursor(bool);

@@ -1,8 +1,6 @@
 #pragma once
-struct Coord {
-	int x;
-	int y;
-};
+#include "my_console.h"
+
 class Object {
 private:
 	Coord pos;

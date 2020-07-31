@@ -40,3 +40,9 @@ void g_map::print()
 		}
 	}
 }
+
+bool g_map::isTrungMap(Coord somewhere)
+{
+	if (map_arr[somewhere.y][somewhere.x] != ' ') return true;
+	return false;
+}
