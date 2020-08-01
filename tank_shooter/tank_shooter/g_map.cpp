@@ -35,7 +35,7 @@ void g_map::print()
 			if (map_arr[i][j] != ' ')
 			{
 				gotoxy(j, i);
-				std::cout << SNAKE_CHAR;
+				std::cout << (char)177;
 			}
 		}
 	}

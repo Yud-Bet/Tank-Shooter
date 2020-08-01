@@ -14,19 +14,38 @@ int main()
 {
     srand(time(0));
     ShowConsoleCursor(false);
-	g_map m1;
+	g_map m1(20,20);
 	m1.print();
     
     //object initialization
-    Object a(50, 70);
+    Object a(1, 1);
+    Object b(17, 17);
     a.print();
     a.setDirection(4);
-
+    b.print();
+    
     while (true) {
-        a.clear();
-        a.setDirection(Randoms(1, 10));
-        a.move();
-        a.print();
-        sleep_for(milliseconds(100));
+        //obj a                        
+        if (!m1.isTrungMap(a.ifMove())) {
+            a.move();
+            a.setDirection(Randoms(1, 10));
+        }
+        else a.setDirection(Randoms(1, 10));
+     
+     
+
+
+
+
+
+
+        //a tim thay b
+        if (a.found(b)) {
+            gotoxy(0, 21);
+            system("pause");
+        }
+
+
+        sleep_for(milliseconds(50));
     }
 }
