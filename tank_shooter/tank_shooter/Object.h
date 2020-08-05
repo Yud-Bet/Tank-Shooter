@@ -15,6 +15,7 @@ public:
 	void setDirNearer(Coord);
 	void setDirFarther(Coord);
 	Coord getPos();
+	int getDirection() { return direction; }
 	void move();	 // ok move() neu nhu ifMove() k trung map
 	Coord ifMove();  //neu nhu move() thi den dau?
 	void print();

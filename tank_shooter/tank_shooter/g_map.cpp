@@ -43,6 +43,7 @@ void g_map::print()
 
 bool g_map::isTrungMap(Coord somewhere)
 {
+	if (somewhere.x < 0 || somewhere.y < 0) return true;
 	if (map_arr[somewhere.y][somewhere.x] != ' ') return true;
 	return false;
 }

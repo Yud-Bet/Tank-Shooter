@@ -4,11 +4,7 @@
 
 void Object::setDirection(int dir) {
 	if (dir <= 4 && dir >= 1) {
-		//direction = dir;
-		if (direction == 1) { if (dir != 3) direction = dir; }
-		else if (direction == 2) { if (dir != 4) direction = dir; }
-		else if (direction == 3) { if (dir != 1) direction = dir; }
-		else if (direction == 4) { if (dir != 2) direction = dir; }
+		direction = dir;
 	}
 }
 
